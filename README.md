@@ -10,6 +10,9 @@ The goal of this project was to learn the fundamentals of web development and di
 * **CSS3**: Styling and layout.
 * **Javascript** (optional): Interactivity.
 
+##🦟 Known Bugs
+* The Dark Theme is unavailable because of code errors. I'm now trying to correct it.
+
 ## 📖 What I Learned
 * Structuring web pages with semantic tags.
 * Designing responsive layouts.
