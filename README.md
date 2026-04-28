@@ -1,6 +1,7 @@
 # Intro to Computer Science Project 💻
 
 Welcome to my high school **Digital Sciences & Technology** (SNT) project! This repository contains the source code for the website I built as part of my curriculum.
+RECALL : This is NOT the official Aelox Hardware website. For the official website, please follow : https://website-delta-six-25.vercel.app/
 
 ## 🚀 Overview
 The goal of this project was to learn the fundamentals of web development and digital citizenship. The site covers various topics related to how the digital world works.
