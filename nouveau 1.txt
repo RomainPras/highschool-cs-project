@@ -1,0 +1,3 @@
+import
+open envc as venv
+run alztool

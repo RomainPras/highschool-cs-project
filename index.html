@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aelox Hardware</title>
+    <script>
+        // Empêche le clignotement en mode Sombre : exécuté avant le code CSS
+        if (localStorage.getItem('theme_site') === 'sombre') {
+            document.documentElement.classList.add('sombre');
+        }
+    </script>
+    <link rel="stylesheet" href="style_pages_général.css">
+
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-liens-overlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="menu-liens">
+        <div class="menu-liens-entête">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                aeloxhardware
+            </a>
+            <bouton class="menu-liens-close" onclick="closeMobileMenu()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </bouton>
+        </div>
+        <nav class="menu-liens-nav">
+            <a href="index.html" class="active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7" rx="1"/>
+                    <rect x="14" y="3" width="7" height="7" rx="1"/>
+                    <rect x="3" y="14" width="7" height="7" rx="1"/>
+                    <rect x="14" y="14" width="7" height="7" rx="1"/>
+                </svg>
+                Accueil
+            </a>
+            <a href="produits.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                </svg>
+                produits
+            </a>
+            <a href="produits.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                produits
+            </a>
+            <a href="contactus.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+                contactus
+            </a>
+            <a href="settings.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+                Settings
+            </a>
+        </nav>
+        <div class="menu-liens-footer">
+        </div>
+    </div>
+
+    <div class="app-container">
+        <nav class="nav-princ">
+            <div class="nav-conteneur">	
+                <div class="nav-gauche">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <img src="ahi.png" alt="logo Aelox Hardware" width="20" height="25">
+                        </div>
+                        Aelox Hardware
+                    </a>
+                    <div class="nav-menu">
+                        <div class="nav-item">
+                            <a href="index.html" class="lien-nav active">
+                                <img width="24" height="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9UlEQVR4nO2YP2gUQRjFN0EiAU1EMEWwsEuagE06wUIQ0tkl3aWyOBjWeW/nLt20aVPaWgmCCGIZBJMgiGJlIzY2IopgIFyRnK6M3JphuT+buLc7B9+DBwu7O9/77cx8u2wUiUYrjuMbAF46u+NoEkVyjeQPkqkzgJ8A7kUTpCmSbQC/MgjPvwFsW2uno5CllJoD8LQPQN4vtNZXoxCVJMlNAJ8KQGRL7TPJVX8MDri2MgiSDZKdohCe3T0N72E8IHlcOYhS6iKAnXMA5GfnkdZ61o0J4BbJL5WBtFqt6yRf/y+EB/Mua9FKqWsAdscOorW+TfJrWRCevydJctfVsNZecB3OdbqxtVaS3TFAZO4C2HK1XEEA66USGGMuA3gyRoC8n8dxfKVUCADLAD5UCJH29s1HrfVKKRAkNwAcVQ3BU3cAbJ4bwNtsaSB+aK2dOessLPjtLxQD2DfGLBaC6PdCCszfANwZNRP3+30ihGYAJ+41kLXof2o2m5dIPq47IM8O9Kzdbs/7y+lN7+Rh3eFY3H+zuuz+kjoA8N4YsxRAwLSIe1nfAng1aJ+kk+BolOoOSAHJqe6AFJCc6g5IAcmp7oAMAWTk4FXWooBQQCggQyQgFJBUQIZJQCggqYAMk4BQQFIBGSaSe6GDYNDfRZEoKl1/ANEDLifb/NrAAAAAAElFTkSuQmCC" alt="home">
+                                Accueil
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="projets.html" class="lien-nav">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/UlEQVR4nO2dS47TMBzGfQDYIQHiBGxhUS6AEAJxDEBdtM33TQTLWXIChNhxB+AggHicAfEQIAECaUaVWimUPOzE7j+Nv5/kzUxT298vdh6TcZwTQgghhBBCiACKorhEcg7gJcl3AH6QPAkpToQD4ByARwB+hwYuAQMheRPA16HBS0APiqK4R/JvrPApAf4AuAHgT8zwKQF+HB0dXYg57UhAICSfpAifEuB3qpli6pEAT9bn+R5BviJ5az6fn6nZ/iTn4oZC8kVX+HXBSwCjCfjQVgGA2x3bm4fAQxYA4FtbBW17vwQwyggYVIF1AJQA+xAoAfkWJwGUgKQNNEYCjJEAYyTAGAkwRgKMkQBjJMAYCTBGAoyRAGMkwBgJ6IDkg642jLp/o29gYgke352vAJKzdfH87LEERGwgyasAPq+f2CuK4lqqkWDVv2gVpGggN+FvvyOlBIv+Ra0gdgNJzuqeU938bOa5/U8J6NFA7uz5dRLaRkLX9tb9S1JBrAbSM7wmCX3Cl4Ce4e1K6Bu+BLj+4W0lDAk/ewFsOOCGSAjY/pcEVBi654aK2lzU/XeK6nIUQIPwK3X/IyF1PqMUAOChb3hDp6i6a4fqbYvU+YxSgM8V6za8siyvkPwUK/zd+pt+P3kBbTfQaqaNoIN1wFXzcdYC6kZCU3i+I8E3fF8mL6AqoSu8Lgmxw89GQOXAPEt9sy6UbASEsDsSUoU/GgHL5fIyyWckP3Z9fh8CqiMhZfijEADg6ZD/pHcJCfmT5cEKGFrcgSMBxkiAMRJgjAQYIwHGjEVA43pBU4cjENC6XtDUobWArvWCpg6tBeS89+9FwNAFm6YO9yDgvaYg2ymoddE+AK/LsjzrMoV7EOCzbOUbAHdyFMHUAlIv3MqJl1iWH1t3hDkLWCwW50l+se4McxWwBsB1TUW0E7CG5N3YL3DgxItL8SIHTUe0E1B9iU/TM/UqTCtgy2q1ukjyPoDnJN+S/G7dYeYkQAghhBBCCCGEEEIIIYQQ7hA4BUwaAbhSU6wbAAAAAElFTkSuQmCC" width="24" height="24" alt="project">
+                                Projet
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="produits.html" class="lien-nav">
+								<img width="24" height="24" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNklEQVR4nO3WMU7DQBAF0JFApAriDEicgpIz+AS0rGz971UalG25AtegoyYVEgehSR9RGEUBYUUkznoXPJHnS78a2TvPdmERi8WSnKqqLgG8kmxi+32PPtcCePPeX6ULRKSu62sA730WSYVwg1kCuElCkLwFsOq7RA4IN5gPknfRgKIoTgA8pByeE8KfPoYQTg9CeO+nAJ4yHZwb0gB4LsvyIvrtWIYOM30Cf10xCHVVDMLxQe5DCGe77r+ekZyrh3jvp11nOOfO1UNIzp1zkz2ICYBwDJDmPyoGoa6KQairYhDqqhiEuioGoa6KQZi3Xz+Os9gZNUHWi7bOmx06oyZIe9HthbFnpg6yvUjsjAahQZpRQJjpQezM4Av8EoPwCCoGoa7KaCAAFkMvye6+dEIsFou08wlSEEdyK2H5lQAAAABJRU5ErkJggg==" alt="product">
+								Produits
+							</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="contactus.html" class="lien-nav">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACB0lEQVR4nO2Xv47TQBCHjQQIaCgoQPwRBw0dTwIPwAukOYjj72cnKZC24RHgHgKdgIb2kAABBycaON0jHBRXcARRUASN5Einlbk42LEdaX/SNN7Z2fmcmVknioKCgoI6I+CapE3gUNK0TrOYwLMsy24tM/mDuhMvsIPhcHi1dgBJmw0kP7OntQOwhLI5xn7UDiDvkFWLHwWAOQoAVQ9Y9nplBQAttP5olQEe1p58g028FUXRiaPPnXPnJAn4CEzMJG0DJElytjMAwJ/BYHDTO/OGpL1/3djAbhzHa50AkPSy4M3vlfjs+OqcO9M6AHDPO89U9tspqQxQdT1N09ue/ydvz/Msyy6bAS+8te3WAUaj0XnP/+dRf0t8tpYkyRWvFw5bByjwX20AG5sqWULAh8oAdcvmvEo2cZqmg84B2CUF7M5LHvjSiTFapDiO146DsOQlXS8VrA2A2S9hc97qPG9ss/dAXOrNt9XEtUsBQAsB9Hq9U5LuAk+sfIB94Hdu+3lJPQbumG9nAJxzJyXdB76XHaOSvgHrtve/AerQeDy+ALxaIPGpZ1sWoxUAKwPgdYXkp/lofeecO904APCgIJmJpA3rBZv39h/BzO6H/NlG7uPvW28cQNJn74w3/X7/4rx9aZpeAt56e3fmAlQ1Pz7wq67YwKRxgGXHjwKAWgYICgoKitrQX35KkiOFuk0AAAAAAElFTkSuQmCC" width="24" height="24" alt="add-contact-to-company">
+                                Contactez-nous
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <bouton class="user-menu"title="Cette fonctionnlité est encore en développement.">
+                        <div class="photo-utilisateur">?</div>
+                        <span class="nom-utilisateur">Déconnecté</span>
+                    </bouton>
+                    <bouton class="menu-liens-btn" onclick="toggleMobileMenu()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                    </bouton>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="entête">
+                <h1 class="titre" id="titre">Aelox Hardware</h1>
+                <p class="sous-titre">La fabrication additive non planaire, disponible pour tous.</p>
+            </div>
+
+            <!-- A PARTIR D'ICI ET JUSQU'A PROCHAIN AVERTISSEMENT, CE CODE EST BASE SUR UN EXEMPLE TROUVE EN LIGNE -->
+									<!-- LES GRAPHISMES VECTORIELS NE SONT PAS MAITRISES -->
+				<a href="aetheris-4.html" class="carte-produit">					
+						<div class="contenu-texte">
+						<div class="légende-produit">PRODUIT PHARE</div>
+						<div class="nom-produit">Aetheris-4</div>
+						<p>Disponible à partir de 1500€</p>
+						</div>
+					<img src="AE4_01.jpg" alt="Aetheris-4" class="img-produit">
+					<img src="AE4_02.jpg" alt="Aetheris-4" width=auto height="266">
+				</a>
+			<!-- ATTENTION : FIN DE L'EXEMPLE DE CODE TROUVE EN LIGNE -->
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="pied_de_page">
+            <p>&copy; 2026 Aelox Hardware.</p>
+        </footer>
+    </div>
+
+    <script src="script_pages_général.js"></script>
+</body>
+</html>

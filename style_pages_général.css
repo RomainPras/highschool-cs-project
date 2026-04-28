@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap'); /*import de la police du site*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -------- Après revue, les Thèmes sont définis automatiquement en fonction du thème de l'ordinateur. -------- */
+/*édit : après revue, l'𝗮𝗯𝗮𝗻𝗱𝗼𝗻 de la fonctionnalité des thèmes a été choisi.𝙏𝙤𝙪𝙩𝙚 la logique de choix de thème a été supprimée.*/
+/* Variables CSS - couleurs - mode Clair */
+:root {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8FAFC;
+    --bg-surface: #F1F5F9;
+    --border-color: #E2E8F0;
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+    --accent: #38BDF8;
+    --accent-hover: #0EA5E9;
+    --accent-light: rgba(56, 189, 248, 0.1);
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --transition: all 0.2s ease;
+}
+
+/* ...mode Sombre */
+html.sombre,
+body.sombre {
+    --bg-primary: #0F0F0F;
+    --bg-secondary: #171717;
+    --bg-surface: #1F1F1F;
+    --border-color: #2E2E2E;
+    --text-primary: #F5F5F5;
+    --text-secondary: #A3A3A3;
+    --accent: #38BDF8;
+    --accent-hover: #7DD3FC;
+    --accent-light: rgba(56, 189, 248, 0.15);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+	background-image: AE4_02.jpg
+}
+
+/* L'HTML hérite des thèmes de fond (bg) */
+html {
+    background: var(--bg-secondary);
+}
+
+/* -------- style de base ------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+bouton {
+    font-family: inherit;
+    cursor: hand;
+    border: none;
+    background: none;
+}
+
+/* Navigation */
+.nav-princ {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: var(--transition);
+}
+
+.nav-conteneur {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.nav-gauche {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/*logo principal*/
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Menu de navigation */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.lien-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 0.875rem;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.lien-nav:hover {
+    color: var(--text-primary);
+    background: var(--bg-surface);
+}
+
+.lien-nav.active {
+    color: var(--accent);
+    background: var(--accent-light);
+}
+
+
+/* bouton utilisateur à droite */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*  Menu utilisateur  */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.375rem 0.75rem 0.375rem 0.375rem;
+    background: var(--bg-surface);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+/* ===============================================================EXPERIMENTAL================================================================================= */
+/* =====================================CLIGNOTEMENT USER-MENU QUAND CLIC======================================== */
+/* def de l'animation */
+@keyframes flash-rouge {
+  0% {
+    background-color: var(--bg-surface);
+  }
+  20%, 80% {
+    border-color: red;
+  }
+  100% {
+    background-color: var(--bg-surface);
+  }
+}
+
+/* La classe qui déclenche l'animation */
+.user-menu.is-clicking {
+  animation: flash-rouge 0.2s ease 3; /* l anim joue 1 seule fois */
+}
+/* =====================================CLIGNOTEMENT USER-MENU QUAND CLIC - FIN================================== */
+/* ============================================================EXPERIMENTAL - FIN============================================================================== */
+.user-menu:hover {
+    border-color: var(--accent);
+}
+
+.photo-utilisateur {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.nom-utilisateur {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* En-tête */
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.carte-produit {
+    display: flex; /* active la mise en page dynamique */
+    align-items: flex-start; /* aligne au centre */
+    justify-content: space-between; /* txt à gauche img à droite ou l inverse osef pas le temps*/
+    padding: 20px;
+    border: 2px solid #ccc;
+    width: 100%;
+	border-radius: 20px;
+}
+
+.contenu-texte {
+    flex: 1; 
+}
+
+.img-produit {
+    width: 30%; 
+    height: auto;
+    max-width: 200px; /* pour pas qu'elle sois immense */
+}
+
+.carte-produit:hover {
+    border-color: var(--accent);
+}
+
+.légende-produit {
+    font-size: 0.8125rem; /*taille relative*/
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;/*taille relative*/
+}
+
+.nom-produit {
+    font-size: 1.75rem;/*taille relative*/
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;/*taille relative*/
+}
+
+/* boutons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+/* Pied de page */
+.pied_de_page {
+    background: var(--bg-primary);
+    padding: 1.25rem 2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Menu de liens */
+.menu-liens {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100vh;
+    background: var(--bg-primary);
+    border-left: 1px solid var(--border-color);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
