@@ -16,9 +16,7 @@ The goal of this project was to learn the fundamentals of web development and di
 * Understanding the impact of digital technology on society.
 
 ## 📂 How to Run
-1. Clone the repository:
-   `git clone https://github.com/your-username/intro-to-cs-site.git`
-2. Open `index.html` in your favorite web browser.
+No more cloning !!! My website is now live at the following URL : https://romainpras.github.io/highschool-cs-project/
 
 ---
 *Created by Romain - 2026*
