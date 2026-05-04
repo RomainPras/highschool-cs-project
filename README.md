@@ -1,7 +1,7 @@
 # Intro to Computer Science Project
 
 Welcome to my high school **Computer Sciences** project! This repository contains the source code for the website I built as part of my curriculum.
-*REMINDER : This is NOT the official Aelox Hardware website. For the official website, please follow : https://website-delta-six-25.vercel.app/*
+*REMINDER : This is NOT the official Aelox Hardware website. For the official website, please follow : https://aeloxhardware.com/*
 
 For THIS repo, please go to : https://romainpras.github.io/highschool-cs-project
 
