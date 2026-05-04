@@ -1,7 +1,8 @@
 # Intro to Computer Science Project
 
 Welcome to my high school **Computer Sciences** project! This repository contains the source code for the website I built as part of my curriculum.
-*REMINDER : This is NOT the official Aelox Hardware website. For the official website, please follow : https://aeloxhardware.com/*
+*REMINDER : This is NOT the official Aelox Hardware website. For the official website, please follow : https://aeloxhardware.com/
+For the official Aelox Hardware account, please go to : github.com/aeloxhardware*
 
 For THIS repo, please go to : https://romainpras.github.io/highschool-cs-project
 
