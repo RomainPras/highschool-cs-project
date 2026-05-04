@@ -59,6 +59,11 @@ body {
     transition: var(--transition);
 }
 
+.lien-bleu {
+    color: blue;
+    text-decoration: underline; /* Optionnel : pour garder le soulignement */
+}
+
 a {
     text-decoration: none;
     color: inherit;
